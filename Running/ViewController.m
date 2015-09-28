@@ -59,7 +59,7 @@
 
 -(void) drawRowOfBalls: (int) numberBalls {
     CGFloat space = [self spaceBetweenBallCenterWhenNumberBallIsKnown:numberBalls];
-    for(int j =1; j < 667/space-2; j++)
+    for (int j=0; j< (667-2*_margin)/space ; j++){
         for(int i =0; i < numberBalls; i++)
         {
             [self placeGrayBallAtX:_margin +i * space
